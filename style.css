@@ -1,0 +1,70 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(210, 236, 236);
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 45%);
+    border-radius: 25px;
+    box-shadow: 8px 8px 10px 3px rgba(0, 0, 0, .5);
+}
+
+h1, input, button {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'JetBrains mono';
+    border-radius: 25px;
+    border: 2.5px solid rgb(40, 52, 129);
+    margin: 20px auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    top: 60px;
+    font-size: 40px;
+    border: none;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+}
+
+input:nth-last-child(1n) {
+    top: 45%;
+    transform: translate(-50%, 50%);
+}
+
+input:nth-last-child(2n) {
+    top: 30%;
+    transform: translate(-50%, 50%);
+}
+
+button {
+    width: 355px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(40, 52, 129);
+    top: 63%;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(50, 66, 172);
+}
